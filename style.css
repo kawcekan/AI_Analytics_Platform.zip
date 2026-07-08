@@ -1,0 +1,95 @@
+/* Futuristic dashboard styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Main background */
+.stApp {
+    background: radial-gradient(circle at 10% 20%, rgb(0, 11, 30) 0%, rgb(5, 30, 60) 90%);
+    color: #ffffff;
+}
+
+/* Sidebar background */
+[data-testid="stSidebar"] {
+    background-color: rgba(5, 20, 45, 0.95);
+    border-right: 1px solid rgba(0, 150, 255, 0.3);
+}
+
+/* Sidebar Text */
+[data-testid="stSidebar"] .css-17lntkn {
+    color: #e0e5ec;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Highlighting primary text */
+.highlight-text {
+    background: -webkit-linear-gradient(45deg, #00b4db, #0083b0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Cards */
+div[data-testid="stMetricValue"], div[data-testid="stMetricLabel"] {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Buttons */
+.stButton > button {
+    background: linear-gradient(135deg, #0052D4 0%, #4364F7 50%, #6FB1FC 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 150, 255, 0.4);
+    border: none;
+    color: white;
+}
+
+/* File Uploader */
+[data-testid="stFileUploadDropzone"] {
+    background-color: rgba(0, 150, 255, 0.05);
+    border: 2px dashed rgba(0, 150, 255, 0.5);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+[data-testid="stFileUploadDropzone"]:hover {
+    background-color: rgba(0, 150, 255, 0.1);
+    border-color: #00b4db;
+}
+
+/* Dataframe tables */
+[data-testid="stDataFrame"] {
+    background-color: rgba(255,255,255,0.02);
+    border-radius: 12px;
+    border: 1px solid rgba(0,150,255,0.2);
+}
+
+/* Success/Info boxes */
+.stAlert {
+    background-color: rgba(0, 150, 255, 0.1);
+    border: 1px solid rgba(0, 150, 255, 0.3);
+    color: #ffffff;
+    border-radius: 10px;
+}
